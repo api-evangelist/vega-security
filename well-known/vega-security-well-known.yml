@@ -1,0 +1,43 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of vega.io + app.vega.io
+hosts:
+- host: https://vega.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://app.vega.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 302
+    note: redirects to /login?redirectTo=... (application requires authentication)
+  - path: /.well-known/openid-configuration
+    status: 302
+    note: redirects to /login?redirectTo=... (application requires authentication)
+  - path: /.well-known/oauth-authorization-server
+    status: 302
+    note: redirects to login
+  - path: /.well-known/api-catalog
+    status: 302
+    note: redirects to login
+  - path: /.well-known/ai-plugin.json
+    status: 302
+    note: redirects to login
+- host: https://docs.vega.io
+  documents:
+  - path: /llms.txt
+    status: 302
+    note: Mintlify docs are login-gated; redirects to /login?redirect=%2Fllms.txt
+notes: No public well-known discovery documents were found; the vega.io marketing
+  site returns 404 for all probed paths and the app/docs hosts gate everything
+  behind authentication.

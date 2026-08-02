@@ -1,0 +1,12 @@
+generated: '2026-07-21'
+method: searched
+source: https://status.vega.io/
+status_page: https://status.vega.io/
+status_page_platform: incident.io
+versioning: null
+deprecation: null
+sla: null
+deprecated_operations: []
+notes: Vega publishes a public status page ("Vega Status", powered by incident.io)
+  at status.vega.io. No public versioning policy, deprecation policy, or SLA was
+  found; product documentation at docs.vega.io is login-gated.

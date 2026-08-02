@@ -1,9 +1,25 @@
 aid: vega-security
 name: Vega Security
-description: 'Vega Security is a company surfaced as a portfolio company of accel and added to the API
-  Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Vega (vega.io) is an AI-native security operations platform that bills
+  itself as the operating system for agentic SecOps in the post-SIEM era. Its Security
+  Analytics Mesh (SAM) federates queries across security data sources in place --
+  with no ingestion, migration, or egress -- and powers agentic detection engineering,
+  autonomous alert triage, and security analytics, continuously assessing detection
+  coverage against MITRE ATT&CK. Backed by Accel. The product app and documentation
+  are login-gated and no public API surface has been published yet.'
 url: https://raw.githubusercontent.com/api-evangelist/vega-security/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/68791f04ead01339340acbbe/687e5eab154f5a8607c2f647_webclip.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Cybersecurity
+- Security Operations
+- SIEM
+- Agentic AI
+- Threat Detection
+- Security Analytics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,42 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/vega-security-trust-center.yml
+- type: DomainSecurity
+  url: security/vega-security-domain-security.yml
 - type: Website
   url: https://vega.io/
+- type: Blog
+  url: https://vega.io/blog
+- type: Documentation
+  url: https://docs.vega.io/
+- type: Login
+  url: https://app.vega.io/
+- type: GitHubOrganization
+  url: https://github.com/vegasecurity
+- type: StatusPage
+  url: https://status.vega.io/
+- type: Lifecycle
+  url: lifecycle/vega-security-lifecycle.yml
+- type: Compliance
+  url: https://trust.vega.io/
+- type: PrivacyPolicy
+  url: https://vega.io/privacy-policy
+- type: LLMsTxt
+  url: llms/vega-security-llms.txt
+- type: WellKnown
+  url: well-known/vega-security-well-known.yml
+- type: TermsOfService
+  url: https://legal.vega.io/
+- type: About
+  url: https://vega.io/about
+- type: Careers
+  url: https://vega.io/careers
+- type: Partners
+  url: https://vega.io/partners
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

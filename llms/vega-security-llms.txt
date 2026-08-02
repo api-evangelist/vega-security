@@ -1,0 +1,35 @@
+# Vega Security
+
+> Vega (vega.io) is an AI-native security operations platform — "The Operating System for Agentic SecOps." Its Security Analytics Mesh (SAM) federates queries across every security data source in place (no ingestion, migration, or egress) and powers agentic detection engineering, autonomous alert triage, and security analytics, with detection coverage continuously assessed against MITRE ATT&CK. Backed by Accel.
+
+Vega positions itself as a post-SIEM platform: AI-powered detections, agentic triage of every alert, federated query-at-source analytics, IR readiness/coverage assessment, and legacy SIEM cost reduction. The product application (app.vega.io) and product documentation (docs.vega.io, Mintlify) are login-gated; no public API reference, OpenAPI, or package registry SDKs were found as of 2026-07-21.
+
+## Company
+
+- [Website](https://vega.io/): Vega — The Operating System for Agentic SecOps
+- [Platform](https://vega.io/platform): Security Analytics Mesh (SAM) platform overview
+- [About](https://vega.io/about): Company background
+- [Blog](https://vega.io/blog): Vega blog
+- [Vega Labs / Threat Intel](https://threats.vega.io/): Vega threat research portal
+- [Careers](https://vega.io/careers): Open roles
+- [Partners](https://vega.io/partners): Partnerships
+
+## Product access
+
+- [App login](https://app.vega.io/): Product application (authentication required)
+- [Documentation](https://docs.vega.io/): Product docs (login-gated Mintlify site)
+- [Get a demo](https://vega.io/get-a-demo): Demo request
+
+## Operations, trust, and legal
+
+- [Status page](https://status.vega.io/): Vega Status (incident.io)
+- [Trust center](https://trust.vega.io/): SafeBase trust center — SOC 2 Type 2, ISO/IEC 27001:2022, CSA STAR Level 1, SIG Lite 2026, GDPR
+- [Legal hub](https://legal.vega.io/): Legal documents including Data Processing Addendum
+- [Privacy policy](https://vega.io/privacy-policy)
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/vega-security/refs/heads/main/apis.yml): APIs.json profile for Vega Security
+- [Trust center artifact](https://raw.githubusercontent.com/api-evangelist/vega-security/refs/heads/main/security/vega-security-trust-center.yml)
+- [Domain security artifact](https://raw.githubusercontent.com/api-evangelist/vega-security/refs/heads/main/security/vega-security-domain-security.yml)
+- [Lifecycle artifact](https://raw.githubusercontent.com/api-evangelist/vega-security/refs/heads/main/lifecycle/vega-security-lifecycle.yml)
