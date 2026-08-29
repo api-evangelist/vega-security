@@ -8,6 +8,17 @@ description: 'Vega (vega.io) is an AI-native security operations platform that b
   coverage against MITRE ATT&CK. Backed by Accel. The product app and documentation
   are login-gated and no public API surface has been published yet.'
 url: https://raw.githubusercontent.com/api-evangelist/vega-security/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
