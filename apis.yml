@@ -58,6 +58,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: BlogRSS
+  url: https://blog.vega.io/index.xml
+- type: Conformance
+  url: conformance/vega-security-conformance.yml
+- type: MCPServer
+  url: mcp/vega-security-mcp.yml
 - type: TrustCenter
   url: security/vega-security-trust-center.yml
 - type: DomainSecurity

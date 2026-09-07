@@ -1,0 +1,34 @@
+generated: '2026-07-21'
+method: searched
+source: https://vega.io/blog/mcp-security-operations-implementations (official Vega engineering post,
+  2026-04-09; verified 2026-07-21)
+name: Vega MCP
+status: published
+status_raw: documented
+access: customer-gated
+transport: null
+endpoint: null
+notes: Vega ships a first-party MCP layer over its Security Analytics Mesh, described in the official
+  post "MCP Is Everywhere. Most Implementations Are Wasting Your Time." Any MCP client (Claude, Cursor,
+  Slack bots, custom agents) can connect and query the full federated security environment in natural
+  language; Vega's own AI triage orchestrator uses the same MCP tools internally. The platform is sales-led
+  and the server endpoint/transport is not published publicly (app.vega.io and docs.vega.io are login-gated,
+  probed 2026-07-21), so no connection details are recorded here. Not listed in the official MCP registry
+  (registry.modelcontextprotocol.io searched 2026-07-21, no match).
+tools:
+- name: nl2kql
+  description: Primary tool. Takes a natural-language question (not a structured filter) and translates
+    it into valid KQL (Kusto Query Language) across the connected security environment, validated against
+    schema and execution constraints.
+- name: run_query
+  description: Executes a KQL query across every connected data source (SIEMs, data lakes, cloud providers,
+    SaaS tools) via Vega's federated query engine.
+- name: get_query_results
+  description: Retrieves results for an executed query, as raw event data or an AI-generated summary depending
+    on what the workflow needs.
+deployment:
+  mode: unclear
+  verified: searched
+  tools: 3
+  checked: '2026-08-12'
+  source: catalog MCP census

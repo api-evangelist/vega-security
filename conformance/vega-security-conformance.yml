@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+source: https://trust.vega.io/ + https://vega.io/ (public site probe 2026-07-21; developer
+  docs at docs.vega.io are login-gated)
+standards:
+- id: soc2
+  conforms: true
+  evidence: SOC 2 Type 2 report published on the SafeBase trust center (https://trust.vega.io/item/soc-2-type-2).
+- id: iso27001
+  conforms: true
+  evidence: ISO/IEC 27001:2022 certification listed on the trust center (https://trust.vega.io/item/iso-iec-27001-2022).
+- id: csa-star
+  conforms: true
+  evidence: CSA STAR Level 1 self-assessment listed on the trust center (https://trust.vega.io/item/csa-star-level-1).
+- id: gdpr
+  conforms: true
+  evidence: GDPR compliance program and Data Processing Agreement published via trust
+    center and legal hub (https://legal.vega.io/).
+- id: sig-lite
+  conforms: true
+  evidence: SIG Lite 2026 questionnaire available on the trust center (https://trust.vega.io/item/sig-lite-2026).
+- id: mitre-attack
+  conforms: true
+  evidence: Platform continuously assesses detection coverage against MITRE ATT&CK
+    (https://vega.io/ and https://vega.io/blog/mitre-attack-coverage-gaps-you-can-see-prioritize-and-close).
+- id: oauth2
+  conforms: false
+  evidence: No public API documentation; app.vega.io /.well-known/openid-configuration
+    and /oauth-authorization-server redirect to login (probed 2026-07-21). SSO support
+    is advertised on the trust center but no public OAuth metadata is exposed.
+- id: oidc
+  conforms: false
+  evidence: No public OpenID Connect discovery document; vega.io returns 404 and app.vega.io
+    is login-gated (probed 2026-07-21).
+- id: rfc9457
+  conforms: false
+  evidence: No public API reference to verify error formats; docs.vega.io requires
+    login (probed 2026-07-21).
+- id: scim
+  conforms: false
+  evidence: No public SCIM documentation found on vega.io or trust center (probed
+    2026-07-21).
