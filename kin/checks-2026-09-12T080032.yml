@@ -1,16 +1,16 @@
 ---
 kin_checks:
   slug: vega-security
-  schema_version: 0.19.0
-  scored_at: '2026-09-06'
-  run_ts: 2026-09-06T224210
+  schema_version: 0.21.0
+  scored_at: '2026-09-12'
+  run_ts: 2026-09-12T080032
   note: Actionable checks only (missed + partial). earned/na are every other check
-    in rubric/scoring-0.19.0.yml; counts below let you verify that.
+    in rubric/scoring-0.21.0.yml; counts below let you verify that.
   counts:
-    total: 132
-    earned: 15
-    partial: 2
-    missed: 71
+    total: 136
+    earned: 17
+    partial: 3
+    missed: 72
     na: 44
   checks:
   - id: multiple_apis
@@ -52,8 +52,6 @@ kin_checks:
   - id: balanced_severities
     status: missed
   - id: vocabulary_published
-    status: missed
-  - id: conformance_declared
     status: missed
   - id: overlay_published
     status: missed
@@ -118,15 +116,19 @@ kin_checks:
   - id: reg_terms_of_service
     status: missed
     detail: pointer liveness 0.0
-  - id: reg_standards_conformance
+  - id: upsert_outcome_discriminator
+    status: missed
+  - id: upsert_alternate_key
+    status: missed
+  - id: upsert_named
+    status: missed
+  - id: upsert_declared_conflict
     status: missed
   - id: spec_presence
     status: missed
   - id: agentic_access
     status: missed
   - id: reversibility_documented
-    status: missed
-  - id: mcp_server
     status: missed
   - id: auth_clarity
     status: missed
@@ -166,3 +168,7 @@ kin_checks:
     status: partial
     earned: 2.5
     detail: pointer liveness 0.5
+  - id: mcp_server
+    status: partial
+    earned: 4.8
+    detail: 'grade: documented'
