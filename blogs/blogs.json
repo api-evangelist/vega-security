@@ -2,6 +2,13 @@
   "repo": "vega-security",
   "feeds": [
     {
+      "source": "https://raw.githubusercontent.com/api-evangelist/vega-security/refs/heads/main/apis.yml",
+      "feed_url": "https://raw.githubusercontent.com/api-evangelist/vega-security/refs/heads/main/apis.yml",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
       "source": "https://vega.io/",
       "feed_url": "https://vega.io/",
       "title": "",
@@ -10,5 +17,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-09-06T19:17:18Z"
+  "fetched": "2026-09-13T13:00:00Z"
 }
